@@ -9,11 +9,8 @@ class Secret {
         System.out.println("What's the password?");
         System.out.print("Password: ");
         answer = sc.nextLine();
-        if("dragon".equals(answer)) {
-            System.out.println("CORRECT! My secret is: I am Batman");
-        }
-        else {
-            System.out.println("INCORRECT! My secret is still safe...");
-        }
+        if(answer.equals("dragon")) System.out.println("CORRECT! My secret is: I am Batman");
+        else System.out.println("INCORRECT! My secret is still safe...");
+        
     }
 }
